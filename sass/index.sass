@@ -10,24 +10,41 @@ $rgba-primary-2: rgba( 61, 59, 59,1);
 $rgba-primary-3: rgba(145,140,140,1);
 $rgba-primary-4: rgba(185,178,178,1);
 
+@font-face
+    font-family: open-sans
+    src: url(../webfonts/OpenSans-Regular.ttf)
+
 *
-    font-family: 'Calibri', sans-serif
+    font-family: 'open-sans', sans-serif
     //outline: 1px solid white
     position: relative
     box-sizing: border-box
+    font-size: 14px
+body
+    padding-top: 50px
 header
+    position: fixed
+    top: 0
+    z-index: 1
+    width: 100%
     background-color: $rgba-primary-1
-    box-shadow: 0 0 10px black
+    height: 44px
     .col-3
         padding: 0
     a
+        line-height: 34px
+        height: 100%
         font-size: 1em
         display:  block
-        color: $color-primary-4
+        color: white
         padding: 5px
         margin: auto
         text-align: center
         width: min-content
+        transition: color .20s
+        i
+            position: relative
+            top: 10px
     a:hover
-        color: $color-primary-3
+        color: $color-primary-4
         text-decoration: none

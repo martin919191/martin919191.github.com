@@ -1,14 +1,27 @@
+@font-face {
+  font-family: open-sans;
+  src: url(../webfonts/OpenSans-Regular.ttf);
+}
+
 * {
-  font-family: 'Calibri', sans-serif;
+  font-family: 'open-sans', sans-serif;
   position: relative;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
+  font-size: 14px;
+}
+
+body {
+  padding-top: 50px;
 }
 
 header {
+  position: fixed;
+  top: 0;
+  z-index: 1;
+  width: 100%;
   background-color: rgba(13, 12, 12, 0.85);
-  -webkit-box-shadow: 0 0 10px black;
-          box-shadow: 0 0 10px black;
+  height: 44px;
 }
 
 header .col-3 {
@@ -16,19 +29,28 @@ header .col-3 {
 }
 
 header a {
+  line-height: 34px;
+  height: 100%;
   font-size: 1em;
   display: block;
-  color: #B9B2B2;
+  color: white;
   padding: 5px;
   margin: auto;
   text-align: center;
   width: -webkit-min-content;
   width: -moz-min-content;
   width: min-content;
+  -webkit-transition: color .20s;
+  transition: color .20s;
+}
+
+header a i {
+  position: relative;
+  top: 10px;
 }
 
 header a:hover {
-  color: #918C8C;
+  color: #B9B2B2;
   text-decoration: none;
 }
 /*# sourceMappingURL=index.css.map */
