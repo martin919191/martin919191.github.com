@@ -58,6 +58,7 @@ header a:hover {
 
 .bg-2 {
   background-image: url(../img/code2.png);
+  background-size: 10%;
   position: fixed;
   z-index: -1;
   width: 100%;
@@ -67,6 +68,7 @@ header a:hover {
 
 .bg-1 {
   background-image: url(../img/code.png);
+  background-size: 50%;
   background-repeat: repeatx;
   position: fixed;
   z-index: 0;
