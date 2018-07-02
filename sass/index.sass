@@ -5,7 +5,7 @@ $color-primary-3: #918C8C;
 $color-primary-4: #B9B2B2;
 
 $rgba-primary-0: rgba(106,103,103,1);	// Main Primary color */
-$rgba-primary-1: rgba( 13, 12, 12,.85);
+$rgba-primary-1: rgba( 13, 12, 12,.80);
 $rgba-primary-2: rgba( 61, 59, 59,1);
 $rgba-primary-3: rgba(145,140,140,1);
 $rgba-primary-4: rgba(185,178,178,1);
@@ -13,7 +13,6 @@ $rgba-primary-4: rgba(185,178,178,1);
 @font-face
     font-family: open-sans
     src: url(../webfonts/OpenSans-Regular.ttf)
-
 *
     font-family: 'open-sans', sans-serif
     //outline: 1px solid white
@@ -25,10 +24,12 @@ body
 header
     position: fixed
     top: 0
-    z-index: 1
+    z-index: 10
     width: 100%
     background-color: $rgba-primary-1
     height: 44px
+    backdrop-filter: blur(10px)
+    -webkit-backdrop-filter: blur(10px)
     .col-3
         padding: 0
     a
@@ -48,3 +49,19 @@ header
     a:hover
         color: $color-primary-4
         text-decoration: none
+.bg-2
+    background-image: url(../img/code2.png)
+    position: fixed
+    z-index: -1
+    width: 100%
+    height: 100%
+    top: 0
+.bg-1
+    background-image: url(../img/code.png)
+    
+    background-repeat: repeatx
+    position: fixed
+    z-index: 0
+    width: 100%
+    height: 100%
+    top: 0

@@ -18,10 +18,12 @@ body {
 header {
   position: fixed;
   top: 0;
-  z-index: 1;
+  z-index: 10;
   width: 100%;
-  background-color: rgba(13, 12, 12, 0.85);
+  background-color: rgba(13, 12, 12, 0.8);
   height: 44px;
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
 }
 
 header .col-3 {
@@ -52,5 +54,24 @@ header a i {
 header a:hover {
   color: #B9B2B2;
   text-decoration: none;
+}
+
+.bg-2 {
+  background-image: url(../img/code2.png);
+  position: fixed;
+  z-index: -1;
+  width: 100%;
+  height: 100%;
+  top: 0;
+}
+
+.bg-1 {
+  background-image: url(../img/code.png);
+  background-repeat: repeatx;
+  position: fixed;
+  z-index: 0;
+  width: 100%;
+  height: 100%;
+  top: 0;
 }
 /*# sourceMappingURL=index.css.map */
