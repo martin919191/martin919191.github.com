@@ -13,8 +13,35 @@
 
 body {
   padding-top: 50px;
+  height: 100%;
 }
 
+.no-padding {
+  padding: 0;
+}
+
+/*********** Styles for Parallax effect ***********/
+.bg-2 {
+  background-image: url(../img/code2_small.png);
+  position: fixed;
+  z-index: -1;
+  width: 100%;
+  height: 100%;
+  top: 0;
+}
+
+.bg-1 {
+  background-image: url(../img/code.png);
+  /*background-size: 25%*/
+  position: fixed;
+  z-index: 0;
+  width: 100%;
+  height: 100%;
+  top: 0;
+}
+
+/********* End styles for Parallax effect *********/
+/****************** Header styles *****************/
 header {
   position: fixed;
   top: 0;
@@ -56,22 +83,30 @@ header a:hover {
   text-decoration: none;
 }
 
-.bg-2 {
-  background-image: url(../img/code2_small.png);
-  position: fixed;
-  z-index: -1;
-  width: 100%;
-  height: 100%;
-  top: 0;
+/**************** End header styles ***************/
+/***************** Content styles *****************/
+.content-row {
+  background-color: rgba(185, 178, 178, 0.8);
+  -webkit-backdrop-filter: blur(10px);
+  opacity: .95;
+  margin-bottom: 10px;
 }
 
-.bg-1 {
-  background-image: url(../img/code.png);
-  /*background-size: 25%*/
-  position: fixed;
-  z-index: 0;
+/*************** End content styles ***************/
+/****************** Footer styles *****************/
+footer {
   width: 100%;
-  height: 100%;
-  top: 0;
+  background-color: rgba(13, 12, 12, 0.8);
+  color: white;
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+  padding: 3px;
 }
+
+footer img {
+  position: relative;
+  height: 20px;
+}
+
+/**************** End footer styles ***************/
 /*# sourceMappingURL=index.css.map */
