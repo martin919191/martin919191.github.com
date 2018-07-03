@@ -86,7 +86,7 @@ header a:hover {
 /**************** End header styles ***************/
 /***************** Content styles *****************/
 .content-row {
-  background-color: rgba(185, 178, 178, 0.8);
+  background-color: rgba(185, 178, 178, 0.95);
   -webkit-backdrop-filter: blur(10px);
   opacity: .95;
   margin-bottom: 10px;
