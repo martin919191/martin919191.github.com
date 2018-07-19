@@ -118,7 +118,7 @@ header a:hover {
 
 .content-row img {
   display: block;
-  max-height: 400px;
+  max-width: 80%;
   margin: auto;
 }
 
