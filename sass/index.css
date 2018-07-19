@@ -13,7 +13,6 @@
 
 body {
   padding-top: 50px;
-  height: 100%;
 }
 
 .no-padding {
@@ -57,7 +56,7 @@ header .col-3 {
   padding: 0;
 }
 
-header a {
+header a, header a:visited, header a:link {
   line-height: 34px;
   height: 100%;
   font-size: 1em;
@@ -71,9 +70,10 @@ header a {
   width: min-content;
   -webkit-transition: color .20s;
   transition: color .20s;
+  text-decoration: none;
 }
 
-header a i {
+header a i, header a:visited i, header a:link i {
   position: relative;
   top: 10px;
 }
@@ -89,6 +89,37 @@ header a:hover {
   background-color: rgba(185, 178, 178, 0.9);
   -webkit-backdrop-filter: blur(10px);
   margin-bottom: 10px;
+}
+
+.content-row h1 {
+  font-size: 2em;
+  font-weight: bold;
+}
+
+.content-row h2 {
+  font-size: 1.8em;
+  font-weight: bold;
+}
+
+.content-row h3 {
+  font-size: 1.3em;
+  font-weight: bold;
+}
+
+.content-row h4 {
+  font-size: 1.1em;
+  font-weight: bold;
+}
+
+.content-row .figure {
+  margin-bottom: 10px;
+  width: 100%;
+}
+
+.content-row img {
+  display: block;
+  max-height: 400px;
+  margin: auto;
 }
 
 /*************** End content styles ***************/

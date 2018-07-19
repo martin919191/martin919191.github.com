@@ -21,7 +21,6 @@ $rgba-primary-4: rgba(185,178,178,.90);
     font-size: 14px
 body
     padding-top: 50px
-    height: 100%
 .no-padding
     padding: 0
 /*********** Styles for Parallax effect ***********/
@@ -53,7 +52,7 @@ header
     -webkit-backdrop-filter: blur(10px)
     .col-3
         padding: 0
-    a
+    a, a:visited, a:link
         line-height: 34px
         height: 100%
         font-size: 1em
@@ -64,6 +63,7 @@ header
         text-align: center
         width: min-content
         transition: color .20s
+        text-decoration: none
         i
             position: relative
             top: 10px
@@ -76,6 +76,27 @@ header
     background-color: $rgba-primary-4
     -webkit-backdrop-filter: blur(10px)
     margin-bottom: 10px
+    h1
+        font-size: 2em
+        font-weight: bold
+    h2
+        font-size: 1.8em
+        font-weight: bold
+    h3
+        font-size: 1.3em
+        font-weight: bold
+    h4
+        font-size: 1.1em
+        font-weight: bold
+    .figure
+        margin-bottom: 10px
+        width: 100%
+    img
+        display: block
+        //width: 80%
+        max-height: 400px
+        margin: auto
+
 /*************** End content styles ***************/
 /****************** Footer styles *****************/
 footer
