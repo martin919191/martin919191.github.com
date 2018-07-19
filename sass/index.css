@@ -71,6 +71,7 @@ header a, header a:visited, header a:link {
   -webkit-transition: color .20s;
   transition: color .20s;
   text-decoration: none;
+  cursor: pointer;
 }
 
 header a i, header a:visited i, header a:link i {
