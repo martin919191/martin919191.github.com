@@ -1,0 +1,74 @@
+@font-face {
+  font-family: 'Montserrat';
+  src: url("../font/Montserrat-Bold.ttf");
+}
+
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  color: white;
+  position: relative;
+}
+
+html {
+  margin: 0;
+}
+
+html, body {
+  width: 100%;
+  height: 100%;
+  margin: 0;
+  overflow: hidden;
+  padding: 5px;
+}
+
+body {
+  background-image: url("../img/bluesky.png");
+  background-size: contain;
+}
+
+body .background-image {
+  position: absolute;
+  width: 200%;
+  height: 100%;
+}
+
+body .background-image .background-level-2 {
+  width: 50%;
+  height: 100%;
+  display: inline-block;
+  background-image: url("../img/clouds-final/back-little-clouds.png");
+  background-size: contain;
+  z-index: 102;
+}
+
+.banner-container {
+  width: 100%;
+  height: 300px;
+}
+
+.banner-container #celestial-body-container {
+  height: 300px;
+  width: 300px;
+  margin: auto;
+  background-image: url("../img/sun.png");
+  background-size: contain;
+}
+
+.information-container {
+  width: 100%;
+  height: calc( 100% - 300px);
+  background-color: #3c3c3c;
+  -webkit-box-shadow: 0 0 10px black;
+          box-shadow: 0 0 10px black;
+  border-radius: 10px;
+  z-index: 103;
+}
+
+.information-container .temperature-container {
+  text-align: center;
+  font-family: Montserrat, sans-serif;
+  font-size: 64px;
+  text-shadow: 0 0 5px black;
+}
+/*# sourceMappingURL=index.css.map */
