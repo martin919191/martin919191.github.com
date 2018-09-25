@@ -1,6 +1,6 @@
 @font-face {
   font-family: 'Montserrat';
-  src: url("../font/Montserrat-Bold.ttf");
+  src: url("../font/Montserrat-Light.ttf");
 }
 
 * {
@@ -57,18 +57,14 @@ body .background-image .background-level-2 {
 
 .information-container {
   width: 100%;
-  height: calc( 100% - 300px);
-  background-color: #3c3c3c;
-  -webkit-box-shadow: 0 0 10px black;
-          box-shadow: 0 0 10px black;
-  border-radius: 10px;
-  z-index: 103;
+  bottom: 0;
+  position: absolute;
+  padding-left: 10px;
 }
 
 .information-container .temperature-container {
-  text-align: center;
   font-family: Montserrat, sans-serif;
-  font-size: 64px;
+  font-size: 24px;
   text-shadow: 0 0 5px black;
 }
 /*# sourceMappingURL=index.css.map */

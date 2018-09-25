@@ -1,17 +1,16 @@
 @font-face
     font-family: 'Montserrat'
-    src: url('../font/Montserrat-Bold.ttf')
+    src: url('../font/Montserrat-Light.ttf')
 
 *
     box-sizing: border-box
-    //outline: 1px solid white
+    //outline: 1px solid black
     color: white
     position: relative
 
 html
     margin: 0
     
-
 html, body
     width: 100%
     height: 100%
@@ -46,13 +45,10 @@ body
         background-size: contain
 .information-container
     width: 100%
-    height: calc( 100% - 300px)
-    background-color: rgb(60,60,60)
-    box-shadow: 0 0 10px black
-    border-radius: 10px
-    z-index: 103
+    bottom: 0
+    position: absolute
+    padding-left: 10px
     .temperature-container
-        text-align: center
         font-family: Montserrat, sans-serif
-        font-size: 64px
+        font-size: 24px
         text-shadow: 0 0 5px black
