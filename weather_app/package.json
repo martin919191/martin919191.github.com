@@ -1,0 +1,24 @@
+{
+  "name": "weather-app",
+  "version": "0.1",
+  "description": "A simple css and html weather application",
+  "main": "index.html",
+  "dependencies": {
+    "express": "^4.13.3",
+    "jquery": "^3.3.1"
+  },
+  "engines": {
+    "node": "4.0.0"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/martin919191/martin919191.github.com"
+  },
+  "keywords": [
+    "html",
+    "css",
+    "weather"
+  ],
+  "author": "Martín Isusi Seff",
+  "license": "MIT"
+}
