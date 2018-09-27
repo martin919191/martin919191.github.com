@@ -1,54 +1,49 @@
+$color-blue-sky: #0CB7F2
+    
 @font-face
     font-family: 'Montserrat'
     src: url('../font/Montserrat-Light.ttf')
 
+@keyframes right-left
+    from
+        left: 0
+    to
+        left: -100%
+
 *
     box-sizing: border-box
-    //outline: 1px solid black
-    color: white
-    position: relative
 
-html
-    margin: 0
-    
 html, body
     width: 100%
     height: 100%
-    margin: 0
-    overflow: hidden
-    padding: 5px
 
-body
-    background-image: url('../img/bluesky.png')
-    background-size: contain
-    //background-repeat: repeat-x, repeat-y
-    .background-image
-        position: absolute
+.background
+    width: 100%
+    height: 100%
+    position: absolute
+    top: 0
+    left: 0
+    z-index: 0
+    overflow: hidden
+    .background-inner
         width: 200%
         height: 100%
-        .background-level-2
+        position: absolute
+        .background-inner-left
             width: 50%
             height: 100%
-            display: inline-block
-            background-image: url('../img/clouds-final/back-little-clouds.png')
-            background-size: contain
-            z-index: 102
+            position: absolute
+            left: 0
+        .background-inner-right
+            width: 50%
+            height: 100%
+            position: absolute
+            left: 50%
 
-.banner-container
-    width: 100%
-    height: 300px
-    #celestial-body-container
-        height: 300px
-        width: 300px
-        margin: auto
-        background-image: url('../img/sun.png')
-        background-size: contain
-.information-container
-    width: 100%
-    bottom: 0
-    position: absolute
-    padding-left: 10px
-    .temperature-container
-        font-family: Montserrat, sans-serif
-        font-size: 24px
-        text-shadow: 0 0 5px black
+#sunny-day
+    background-color: $color-blue-sky
+    #sunny-day-background-1
+        animation: right-left 100s infinite linear
+        div
+            background-image: url('../img/background-full-clouds/background-0.png')
+            background-size: cover

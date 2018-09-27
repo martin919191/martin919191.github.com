@@ -10,29 +10,23 @@
 </head>
 
 <body>
-    <div class="background-image">
-        <div class="background-level-2"></div>
-        <div class="background-level-2"></div>
+    <!--   DEBUG CONTROL ELEMENTS   -->
+    <div style="padding: 5px; background-color: white; border: 1px solid black; position: absolute; z-index: 1000; top:0; left:0; margin: 5px">
+        <button onclick="addOutlines()">Add outlines</button>
     </div>
-    <div class="background-image">
-        <div class="background-level-1"></div>
-        <div class="background-level-1"></div>
-    </div>
-    <div class="background-image">
-        <div class="background-level-0"></div>
-        <div class="background-level-0"></div>
-    </div>
+    <!--   END DEBUG CONTROL ELEMENTS   -->
 
-    <div class="banner-container">
-        <div id="celestial-body-container"></div>
-    </div>
-    <div class="information-container">
-        <div class="temperature-container">
-            12˚ - Avellaneda, Buenos Aires, Argentina
+
+    <div class="background" id="sunny-day">
+        <div class="background-inner" id="sunny-day-background-1">
+            <div class="background-inner-left"></div>
+            <div class="background-inner-right"></div>
         </div>
     </div>
+
     <script src="../node_modules/jquery/dist/jquery.min.js"></script>
     <script src="../node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
+    <script src="js/index.js"></script>
 </body>
 
 </html>

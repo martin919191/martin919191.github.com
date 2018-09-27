@@ -3,68 +3,75 @@
   src: url("../font/Montserrat-Light.ttf");
 }
 
+@-webkit-keyframes right-left {
+  from {
+    left: 0;
+  }
+  to {
+    left: -100%;
+  }
+}
+
+@keyframes right-left {
+  from {
+    left: 0;
+  }
+  to {
+    left: -100%;
+  }
+}
+
 * {
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
-  color: white;
-  position: relative;
-}
-
-html {
-  margin: 0;
 }
 
 html, body {
   width: 100%;
   height: 100%;
-  margin: 0;
-  overflow: hidden;
-  padding: 5px;
 }
 
-body {
-  background-image: url("../img/bluesky.png");
-  background-size: contain;
-}
-
-body .background-image {
+.background {
+  width: 100%;
+  height: 100%;
   position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 0;
+  overflow: hidden;
+}
+
+.background .background-inner {
   width: 200%;
   height: 100%;
+  position: absolute;
 }
 
-body .background-image .background-level-2 {
+.background .background-inner .background-inner-left {
   width: 50%;
   height: 100%;
-  display: inline-block;
-  background-image: url("../img/clouds-final/back-little-clouds.png");
-  background-size: contain;
-  z-index: 102;
-}
-
-.banner-container {
-  width: 100%;
-  height: 300px;
-}
-
-.banner-container #celestial-body-container {
-  height: 300px;
-  width: 300px;
-  margin: auto;
-  background-image: url("../img/sun.png");
-  background-size: contain;
-}
-
-.information-container {
-  width: 100%;
-  bottom: 0;
   position: absolute;
-  padding-left: 10px;
+  left: 0;
 }
 
-.information-container .temperature-container {
-  font-family: Montserrat, sans-serif;
-  font-size: 24px;
-  text-shadow: 0 0 5px black;
+.background .background-inner .background-inner-right {
+  width: 50%;
+  height: 100%;
+  position: absolute;
+  left: 50%;
+}
+
+#sunny-day {
+  background-color: #0CB7F2;
+}
+
+#sunny-day #sunny-day-background-1 {
+  -webkit-animation: right-left 100s infinite linear;
+          animation: right-left 100s infinite linear;
+}
+
+#sunny-day #sunny-day-background-1 div {
+  background-image: url("../img/background-full-clouds/background-0.png");
+  background-size: cover;
 }
 /*# sourceMappingURL=index.css.map */
