@@ -66,12 +66,12 @@ html, body {
 }
 
 #sunny-day #sunny-day-background-1 {
-  -webkit-animation: right-left 100s infinite linear;
-          animation: right-left 100s infinite linear;
+  -webkit-animation: right-left 120s infinite linear;
+          animation: right-left 120s infinite linear;
 }
 
 #sunny-day #sunny-day-background-1 div {
-  background-image: url("../img/background-full-clouds/background-0.png");
-  background-size: cover;
+  background-image: url("../img/sunny-day/background-1.png");
+  background-size: contain;
 }
 /*# sourceMappingURL=index.css.map */
