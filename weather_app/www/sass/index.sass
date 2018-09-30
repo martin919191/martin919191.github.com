@@ -17,20 +17,32 @@ html, body
     width: 100%
     height: 100%
 
+body
+    background-image: url(../img/sunny-day/sky-color.png)
+    background-size: cover
+
 #sun-moon-container
     width: 100%
     height: 100%
     position: absolute
     top: 0
     left: 0 
-    z-index: 1
+    z-index: 0
     #sun
         position: absolute
-        width: 150px
-        height: 150px
+        width: 250px
+        height: 250px
         background-image: url(../img/sun.png)
         background-size: contain
-        left: 100px
+        left: 50px
+        top: 50px
+    #moon
+        position: absolute
+        width: 100px
+        height: 100px
+        //background-image: url(../img/fullmoon.png)
+        background-size: contain
+        right: 100px
         top: 100px
 
 .background
@@ -39,7 +51,7 @@ html, body
     position: absolute
     top: 0
     left: 0
-    z-index: 0
+    z-index: 1
     overflow: hidden
     .background-inner
         width: 200%
@@ -57,7 +69,6 @@ html, body
             left: 50%
 
 #sunny-day
-    background-color: $color-blue-sky
     #sunny-day-background-1
         animation: right-left 120s infinite linear
         div
