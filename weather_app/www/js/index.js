@@ -10,6 +10,16 @@ function addOutlines() {
     }
 }
 
+function addAnimation() {
+    if (!outlines) {
+        $('#sunny-day-background-1').css('animation', 'right-left 120s infinite linear');
+        outlines = true;
+    } else {
+        $('#sunny-day-background-1').css('animation', 'none');
+        outlines = false;
+    }
+}
+
 (function (){
     //var myWorker = new Worker("js/clock.js");
     document.onload = startTime();
