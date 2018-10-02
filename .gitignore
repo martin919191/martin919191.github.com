@@ -1,2 +1,13 @@
 .DS_Store
-node_modules
+node_modules/bootstrap/js
+node_modules/bootstrap/scss
+node_modules/bootstrap/LICENSE
+node_modules/bootstrap/package.json
+node_modules/bootstrap/README.md
+node_modules/jquery/external
+node_modules/jquery/src
+node_modules/jquery/AUTHORS.txt
+node_modules/jquery/bower.json
+node_modules/jquery/LICENSE.txt
+node_modules/jquery/package.json
+node_modules/jquery/README.md
