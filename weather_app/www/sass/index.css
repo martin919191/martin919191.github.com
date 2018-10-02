@@ -94,13 +94,31 @@ body {
   left: 50%;
 }
 
-#sunny-day #sunny-day-background-1 {
-  -webkit-animation: right-left 120s infinite linear;
-          animation: right-left 120s infinite linear;
-}
-
 #sunny-day #sunny-day-background-1 div {
   background-image: url("../img/sunny-day/background-1.png");
   background-size: contain;
+}
+
+.information-container #time-container {
+  position: absolute;
+  bottom: 15px;
+  left: 30px;
+}
+
+.information-container #time-container #time {
+  font-family: Montserrat;
+  display: inline-block;
+  font-size: 48px;
+  color: white;
+  text-shadow: 3px 3px 5px black;
+  width: 200px;
+}
+
+.information-container #time-container #date {
+  font-family: Montserrat;
+  display: inline-block;
+  font-size: 26px;
+  color: white;
+  text-shadow: 3px 3px 5px black;
 }
 /*# sourceMappingURL=index.css.map */
