@@ -17,12 +17,14 @@ function transitionDayNight(){
         $('#night-background').css('opacity','1');
         $('#moon').css('opacity','1');
         $('#sun').css('opacity','0');
+        $('*').css('outline-color','white');
         day = false;
     }else{
         $('#day-background').css('opacity','1');
         $('#night-background').css('opacity','0');
         $('#moon').css('opacity','0');
         $('#sun').css('opacity','1');
+        $('*').css('outline-color','black');
         day = true;
     }
 }
