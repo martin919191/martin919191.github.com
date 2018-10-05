@@ -31,9 +31,24 @@ html, body {
   height: 100%;
 }
 
-body {
-  background-image: url(../img/clear-night/clear-night-background.png);
+body .background-image {
+  z-index: 0;
   background-size: cover;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  -webkit-transition: opacity 3s ease-in-out;
+  transition: opacity 3s ease-in-out;
+}
+
+body #day-background {
+  background-image: url(../img/sunny-day/sky-color.png);
+}
+
+body #night-background {
+  background-image: url(../img/clear-night/clear-night-background.jpg);
 }
 
 #sun-moon-container {
@@ -42,26 +57,32 @@ body {
   position: absolute;
   top: 0;
   left: 0;
-  z-index: 0;
+  z-index: 1;
 }
 
 #sun-moon-container #sun {
   position: absolute;
   width: 250px;
   height: 250px;
+  background-image: url(../img/sun.png);
   background-size: contain;
-  left: 50px;
-  top: 50px;
+  left: 50%;
+  top: 55px;
+  opacity: 0;
+  -webkit-transition: opacity 2s ease-in-out;
+  transition: opacity 2s ease-in-out;
 }
 
 #sun-moon-container #moon {
   position: absolute;
-  width: 100px;
-  height: 100px;
+  width: 150px;
+  height: 150px;
   background-image: url(../img/fullmoon.png);
   background-size: contain;
-  right: 100px;
+  left: 50%;
   top: 100px;
+  -webkit-transition: opacity 2s ease-in-out;
+  transition: opacity 2s ease-in-out;
 }
 
 .background {
@@ -70,7 +91,7 @@ body {
   position: absolute;
   top: 0;
   left: 0;
-  z-index: 1;
+  z-index: 2;
   overflow: hidden;
 }
 
@@ -105,20 +126,39 @@ body {
   left: 30px;
 }
 
-.information-container #time-container #time {
+.information-container #time-container #time1, .information-container #time-container #time2 {
   font-family: Montserrat;
   display: inline-block;
   font-size: 48px;
   color: white;
-  text-shadow: 3px 3px 5px black;
   width: 200px;
+  -webkit-transition: opacity .5s;
+  transition: opacity .5s;
 }
 
-.information-container #time-container #date {
+.information-container #time-container #date1, .information-container #time-container #date2 {
   font-family: Montserrat;
   display: inline-block;
   font-size: 26px;
   color: white;
+  -webkit-transition: opacity .5s;
+  transition: opacity .5s;
+}
+
+.information-container #time-container #time-shadow {
+  font-family: Montserrat;
+  display: inline-block;
+  font-size: 48px;
+  width: 200px;
+  color: transparent;
+  text-shadow: 3px 3px 5px black;
+}
+
+.information-container #time-container #date-shadow {
+  font-family: Montserrat;
+  display: inline-block;
+  font-size: 26px;
+  color: transparent;
   text-shadow: 3px 3px 5px black;
 }
 /*# sourceMappingURL=index.css.map */

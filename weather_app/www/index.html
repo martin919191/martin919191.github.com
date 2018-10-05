@@ -7,6 +7,8 @@
     <title>Weather App</title>
     <link rel="stylesheet" href="../node_modules/bootstrap/dist/css/bootstrap.min.css">
     <link rel="stylesheet" href="sass/index.css">
+    <link href="https://fonts.googleapis.com/css?family=Cabin|Inconsolata|Krub|Montserrat|Nunito|Nunito+Sans|Pacifico|Quicksand|Raleway|Roboto|Rubik|VT323"
+        rel="stylesheet">
 </head>
 
 <body>
@@ -14,8 +16,26 @@
     <div style="padding: 5px; background-color: white; border: 1px solid black; position: absolute; z-index: 1000; top:0; left:0; margin: 5px">
         <button onclick="addOutlines()">Add outlines</button>
         <button onclick="addAnimation()">Add animation</button>
+        <button onclick="transitionDayNight()">Transition night-day</button>
+        <select onchange="changeFont()" id="font-dropdown">
+            <option value="Cabin">Cabin</option>
+            <option value="Inconsolata">Inconsolata</option>
+            <option value="Krub">Krub</option>
+            <option value="Montserrat">Montserrat</option>
+            <option value="Nunito">Nunito</option>
+            <option value="Nunito Sans">Nunito Sans</option>
+            <option value="Pacifico">Pacifico</option>
+            <option value="Quicksand">Quicksand</option>
+            <option value="Raleway">Raleway</option>
+            <option value="Roboto">Roboto</option>
+            <option value="Rubik">Rubik</option>
+            <option value="VT32">VT32</option>
+        </select>
     </div>
     <!--   END DEBUG CONTROL ELEMENTS   -->
+
+    <div class="background-image" id="day-background"></div>
+    <div class="background-image" id="night-background"></div>
 
     <div id="sun-moon-container">
         <div id="sun"></div>
@@ -31,9 +51,19 @@
 
     <div class="information-container">
         <div id="time-container" class="time-container">
-            <div id="time"></div><div id="date"></div>
+            <div id="time-shadow"></div>
+            <div id="date-shadow"></div>
+        </div>
+        <div id="time-container" class="time-container">
+            <div id="time1"></div>
+            <div id="date1"></div>
+        </div>
+        <div id="time-container" class="time-container">
+            <div id="time2"></div>
+            <div id="date2"></div>
         </div>
     </div>
+
     <script src="../node_modules/jquery/dist/jquery.js"></script>
     <script src="../node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
     <script src="js/index.js"></script>
