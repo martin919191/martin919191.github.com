@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="sass/style.css">
+    <title>Martín Isusi</title>
+</head>
+<body>
+    <button onclick="rotateRight()">></button>
+    <button onclick="rotateLeft()"><</button>
+    <button onclick="rotateUp()">⋀</button>
+    <button onclick="rotateDown()">⋁</button>
+    <div class="cube-container">
+        <div id='cube' class="cube">
+            <div class="face face-left">LEFT</div>
+            <div class="face face-right">RIGHT</div>
+            <div class="face face-up">UP</div>
+            <div class="face face-down">DOWN</div>
+            <div class="face face-front">FRONT</div>
+            <div class="face face-back">BACK</div>
+        </div>
+    </div>
+    <script src="node_modules/jquery/dist/jquery.min.js"></script>
+    <script src="js/index.js"></script>
+</body>
+</html>
