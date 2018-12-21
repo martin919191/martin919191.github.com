@@ -29,6 +29,7 @@
   position: absolute;
   width: 200px;
   height: 200px;
+  background-color: lightgray;
 }
 
 .cube-container .cube .face .button {
@@ -65,29 +66,5 @@
   height: 70%;
   right: 0;
   top: 15%;
-}
-
-.cube-container .cube .face-front {
-  background-color: blue;
-}
-
-.cube-container .cube .face-back {
-  background-color: red;
-}
-
-.cube-container .cube .face-left {
-  background-color: green;
-}
-
-.cube-container .cube .face-right {
-  background-color: yellow;
-}
-
-.cube-container .cube .face-up {
-  background-color: grey;
-}
-
-.cube-container .cube .face-down {
-  background-color: darkgrey;
 }
 /*# sourceMappingURL=style.css.map */
