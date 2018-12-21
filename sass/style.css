@@ -5,7 +5,7 @@
 }
 
 .cube-container {
-  margin-top: 100px;
+  margin-top: 150px;
   -webkit-perspective: 500px;
           perspective: 500px;
 }
@@ -14,10 +14,10 @@
   margin: auto;
   width: 200px;
   height: 200px;
-  -webkit-transition: -webkit-transform 2s;
-  transition: -webkit-transform 2s;
-  transition: transform 2s;
-  transition: transform 2s, -webkit-transform 2s;
+  -webkit-transition: -webkit-transform .75s;
+  transition: -webkit-transform .75s;
+  transition: transform .75s;
+  transition: transform .75s, -webkit-transform .75s;
   -webkit-transform-style: preserve-3d;
           transform-style: preserve-3d;
   -webkit-transform: rotateX(0) rotateY(0);
@@ -29,5 +29,65 @@
   position: absolute;
   width: 200px;
   height: 200px;
+}
+
+.cube-container .cube .face .button {
+  position: absolute;
+  text-align: center;
+  color: black;
+  cursor: pointer;
+  background-color: white;
+}
+
+.cube-container .cube .face .button-up {
+  width: 70%;
+  height: 20px;
+  left: 15%;
+  top: 0;
+}
+
+.cube-container .cube .face .button-down {
+  width: 70%;
+  height: 20px;
+  left: 15%;
+  bottom: 0;
+}
+
+.cube-container .cube .face .button-left {
+  width: 20px;
+  height: 70%;
+  left: 0;
+  top: 15%;
+}
+
+.cube-container .cube .face .button-right {
+  width: 20px;
+  height: 70%;
+  right: 0;
+  top: 15%;
+}
+
+.cube-container .cube .face-front {
+  background-color: blue;
+}
+
+.cube-container .cube .face-back {
+  background-color: red;
+}
+
+.cube-container .cube .face-left {
+  background-color: green;
+}
+
+.cube-container .cube .face-right {
+  background-color: yellow;
+}
+
+.cube-container .cube .face-up {
+  background-color: grey;
+}
+
+.cube-container .cube .face-down {
+  background-color: darkgrey;
 }
 /*# sourceMappingURL=style.css.map */

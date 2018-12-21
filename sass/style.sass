@@ -3,13 +3,13 @@
     position: relative
 
 .cube-container
-    margin-top: 100px
+    margin-top: 150px
     perspective: 500px
     .cube
         margin: auto
         width: 200px
         height: 200px
-        transition: transform 2s
+        transition: transform .75s
         transform-style: preserve-3d
         transform: rotateX(0) rotateY(0)
         .face
@@ -17,14 +17,42 @@
             position: absolute
             width: 200px
             height: 200px
-//.face-front
-//.face-back
-//    transform: rotateY(180deg)
-//.face-left
-//    transform: rotateY(-90deg)
-//.face-right
-//    transform: rotateY(90deg)
-//.face-up
-//    transform: rotateX(90deg)
-//.face-down
-//    transform: rotateX(-90deg)
+            .button
+                position: absolute
+                text-align: center
+                color: black
+                cursor: pointer
+                background-color: white
+            .button-up
+                width: 70%
+                height: 20px
+                left: 15%
+                top: 0
+            .button-down
+                width: 70%
+                height: 20px
+                left: 15%
+                bottom: 0
+            .button-left
+                width: 20px
+                height: 70%
+                left: 0
+                top: 15%
+            .button-right
+                width: 20px
+                height: 70%
+                right: 0
+                top: 15%
+        .face-front
+            background-color: blue
+        .face-back
+            background-color: red
+        .face-left
+            background-color: green
+        .face-right
+            background-color: yellow
+        .face-up
+            background-color: grey
+        .face-down
+            background-color: darkgrey
+            

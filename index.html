@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -7,22 +8,65 @@
     <link rel="stylesheet" href="sass/style.css">
     <title>Martín Isusi</title>
 </head>
+
 <body>
-    <button onclick="rotateRight()">></button>
-    <button onclick="rotateLeft()"><</button>
-    <button onclick="rotateUp()">⋀</button>
-    <button onclick="rotateDown()">⋁</button>
+    <button onclick="rotate('RIGHT')">></button>
+    <button onclick="rotate('LEFT')">
+        <</button> <button onclick="rotate('UP')">⋀
+    </button>
+    <button onclick="rotate('DOWN')">⋁</button>
     <div class="cube-container">
         <div id='cube' class="cube">
-            <div class="face face-left">LEFT</div>
-            <div class="face face-right">RIGHT</div>
-            <div class="face face-up">UP</div>
-            <div class="face face-down">DOWN</div>
-            <div class="face face-front">FRONT</div>
-            <div class="face face-back">BACK</div>
+
+            BACKUP
+
+            <div class="face face-front">
+                <div onclick="showFace('up')" class="button button-up">⋀</div>
+                <div onclick="showFace('down')" class="button button-down">⋁</div>
+                <div onclick="showFace('left')" class="button button-left">&lt;</div>
+                <div onclick="showFace('right')" class="button button-right">&gt;</div>
+            </div>
+
+            <div class="face face-left">
+                <div onclick="showFace('up')" class="button button-up">⋀</div>
+                <div onclick="showFace('down')" class="button button-down">⋁</div>
+                <div onclick="showFace('back')" class="button button-left">&lt;</div>
+                <div onclick="showFace('front')" class="button button-right">&gt;</div>
+            </div>
+
+            <div class="face face-right">
+                <div onclick="showFace('up')" class="button button-up">⋀</div>
+                <div onclick="showFace('down')" class="button button-down">⋁</div>
+                <div onclick="showFace('front')" class="button button-left">&lt;</div>
+                <div onclick="showFace('back')" class="button button-right">&gt;</div>
+            </div>
+
+            <div class="face face-up">
+                <div onclick="showFace('back')" class="button button-up">⋀</div>
+                <div onclick="showFace('front')" class="button button-down">⋁</div>
+                <div onclick="showFace('left')" class="button button-left">&lt;</div>
+                <div onclick="showFace('right')" class="button button-right">&gt;</div>
+            </div>
+
+            <div class="face face-down">
+                <div onclick="showFace('front')" class="button button-up">⋀</div>
+                <div onclick="showFace('back')" class="button button-down">⋁</div>
+                <div onclick="showFace('left')" class="button button-left">&lt;</div>
+                <div onclick="showFace('right')" class="button button-right">&gt;</div>
+            </div>
+
+            <div class="face face-back">
+                <div onclick="showFace('up')" class="button button-up">⋀</div>
+                <div onclick="showFace('down')" class="button button-down">⋁</div>
+                <div onclick="showFace('right')" class="button button-left">&lt;</div>
+                <div onclick="showFace('left')" class="button button-right">&gt;</div>
+            </div>
+
+
         </div>
     </div>
     <script src="node_modules/jquery/dist/jquery.min.js"></script>
     <script src="js/index.js"></script>
 </body>
+
 </html>
