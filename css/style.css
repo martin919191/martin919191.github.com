@@ -1,4 +1,29 @@
 * {
   outline: 1px solid black;
 }
+
+header {
+  overflow: hidden;
+  -webkit-transition: all 1.5s ease-in;
+  transition: all 1.5s ease-in;
+}
+
+#hidden-header {
+  width: 100%;
+  height: 75px;
+  position: fixed;
+  top: -75px;
+  z-index: 1000;
+  -webkit-transition: all .25s ease-out;
+  transition: all .25s ease-out;
+}
+
+#profile-picture {
+  width: 100%;
+}
+
+#main-content {
+  -webkit-transition: all .25s ease-out;
+  transition: all .25s ease-out;
+}
 /*# sourceMappingURL=style.css.map */
