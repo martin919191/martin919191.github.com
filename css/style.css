@@ -6,16 +6,29 @@ header {
   overflow: hidden;
   -webkit-transition: all 1.5s ease-in;
   transition: all 1.5s ease-in;
+  padding-bottom: 15px;
 }
 
 #hidden-header {
   width: 100%;
-  height: 75px;
   position: fixed;
   top: -75px;
   z-index: 1000;
   -webkit-transition: all .25s ease-out;
   transition: all .25s ease-out;
+  background-color: white;
+}
+
+#hidden-header h1, #hidden-header h2 {
+  display: inline;
+}
+
+#hidden-header h1 {
+  font-size: 1.2em;
+}
+
+#hidden-header h2 {
+  font-size: 1.1em;
 }
 
 #profile-picture {
@@ -25,5 +38,9 @@ header {
 #main-content {
   -webkit-transition: all .25s ease-out;
   transition: all .25s ease-out;
+}
+
+#studies {
+  background-image: url("../images/code-seamless.jpg");
 }
 /*# sourceMappingURL=style.css.map */
