@@ -11,7 +11,7 @@ window.onscroll = function (event) {
         $('#hidden-header')[0].style.top = "-75px";
     }
     //background-position-y: -10px
-    $('#studies')[0].style.backgroundPositionY = Math.round(window.scrollY / 10) + 'px';
+    $('#quote')[0].style.backgroundPositionY = Math.round(window.scrollY / 10) + 'px';
     //console.log(Math.round(window.scrollY / 10));
 };
 

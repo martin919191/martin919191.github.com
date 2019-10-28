@@ -1,5 +1,5 @@
 * {
-  outline: 1px solid black;
+  font-family: 'Montserrat', sans-serif;
 }
 
 header {
@@ -7,6 +7,24 @@ header {
   -webkit-transition: all 1.5s ease-in;
   transition: all 1.5s ease-in;
   padding-bottom: 15px;
+  background-color: #0b1c28;
+  color: white;
+  -webkit-box-shadow: 0 0 25px black;
+          box-shadow: 0 0 25px black;
+  padding-top: 15px;
+}
+
+header a, header a:hover {
+  color: white;
+}
+
+header h2 {
+  font-size: 1.5em;
+  margin-bottom: 25px;
+}
+
+header p {
+  margin-bottom: 0;
 }
 
 #hidden-header {
@@ -17,6 +35,11 @@ header {
   -webkit-transition: all .25s ease-out;
   transition: all .25s ease-out;
   background-color: white;
+  background-color: #0b1c28;
+  -webkit-box-shadow: 0 0 25px black;
+          box-shadow: 0 0 25px black;
+  color: white;
+  padding-left: 5px;
 }
 
 #hidden-header h1, #hidden-header h2 {
@@ -25,10 +48,12 @@ header {
 
 #hidden-header h1 {
   font-size: 1.2em;
+  padding-right: 10px;
 }
 
 #hidden-header h2 {
   font-size: 1.1em;
+  padding-left: 10px;
 }
 
 #profile-picture {
@@ -38,9 +63,52 @@ header {
 #main-content {
   -webkit-transition: all .25s ease-out;
   transition: all .25s ease-out;
+  z-index: -1;
+  position: relative;
 }
 
-#studies {
+#quote {
+  z-index: -1;
   background-image: url("../images/code-seamless.jpg");
+  -webkit-box-shadow: 0 0 10px white inline;
+          box-shadow: 0 0 10px white inline;
+}
+
+#quote .container {
+  padding: 20px;
+}
+
+#quote .container .row {
+  background-color: rgba(255, 255, 255, 0.75);
+  -webkit-backdrop-filter: blur(2px);
+  backdrop-filter: blur(2px);
+  border-radius: 10px;
+  padding: 25px;
+  -webkit-box-shadow: 0 0 10px black;
+          box-shadow: 0 0 10px black;
+}
+
+@media all and (orientation: portrait) {
+  #quote .container .row {
+    padding: 10px;
+  }
+}
+
+#quote .container .row * {
+  padding: 0;
+  margin: 0;
+}
+
+#quote .container .row #quote-text {
+  font-style: italic;
+  font-size: 1.1em;
+  text-align: center;
+}
+
+#quote .container .row #quote-author {
+  margin-top: 10px;
+  font-weight: bolder;
+  text-shadow: 0 0 1px black;
+  text-align: right;
 }
 /*# sourceMappingURL=style.css.map */

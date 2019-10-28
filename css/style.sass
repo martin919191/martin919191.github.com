@@ -1,16 +1,28 @@
-$rgba-primary-0: rgba( 31, 39, 82,1);	// Main Primary color */
-$rgba-primary-1: rgba( 85, 92,129,1);
-$rgba-primary-2: rgba( 54, 62,101,1);
-$rgba-primary-3: rgba( 12, 18, 55,1);
-$rgba-primary-4: rgba(  2,  6, 27,1);
-    
+$rgba-primary-0: rgba( 13, 51, 81,1);	// Main Primary color */
+$rgba-primary-1: rgba(  9, 83,140,1);
+$rgba-primary-2: rgba( 17, 70,111,1);
+$rgba-primary-3: rgba( 14, 39, 58,1);
+$rgba-primary-4: rgba( 11, 28, 40,1);
+
 *
-    outline: 1px solid black
+    font-family: 'Montserrat', sans-serif
+    //outline: 1px solid black
 
 header
     overflow: hidden
     transition: all 1.5s ease-in
     padding-bottom: 15px
+    background-color: $rgba-primary-4
+    color: white
+    box-shadow: 0 0 25px black
+    padding-top: 15px
+    a, a:hover
+        color: white
+    h2
+        font-size: 1.5em
+        margin-bottom: 25px
+    p
+        margin-bottom: 0
 
 #hidden-header
     width: 100%
@@ -19,18 +31,52 @@ header
     z-index: 1000
     transition: all .25s ease-out
     background-color: white
+    background-color: $rgba-primary-4
+    box-shadow: 0 0 25px black
+    color: white
+    padding-left: 5px
     h1, h2
         display: inline
     h1
         font-size: 1.2em
+        padding-right: 10px
     h2
         font-size: 1.1em
+        padding-left: 10px
 
 #profile-picture
     width: 100%
 
 #main-content
     transition: all .25s ease-out
+    z-index: -1
+    position: relative
 
-#studies
+#quote
+    z-index: -1
     background-image: url('../images/code-seamless.jpg')
+    box-shadow: 0 0 10px white inline
+    .container
+        padding: 20px
+        .row
+            background-color: rgba(255, 255, 255, .75)
+            -webkit-backdrop-filter: blur(2px)
+            backdrop-filter: blur(2px)
+            border-radius: 10px
+            padding: 25px
+            @media all and (orientation: portrait)
+                padding: 10px
+            
+            box-shadow: 0 0 10px black
+            *
+                padding: 0
+                margin: 0
+            #quote-text
+                font-style: italic
+                font-size: 1.1em
+                text-align: center
+            #quote-author
+                margin-top: 10px
+                font-weight: bolder
+                text-shadow: 0 0 1px black
+                text-align: right
