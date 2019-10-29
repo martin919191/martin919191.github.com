@@ -93,14 +93,23 @@ header
         border-color: $rgba-primary-0
     ul
         list-style-type: none
-        text-align: center
+        text-align: left
         padding: 0
         .date
             font-size: .8em
         .title
             font-size: .8em
             margin-bottom: 10px
-
+    @media all and (orientation: portrait)
+            ul
+                list-style-type: none
+                text-align: center
+                padding: 0
+                .date
+                    font-size: .8em
+                .title
+                    font-size: .8em
+                    margin-bottom: 10px
 #experience
     padding-top: 15px
     background-color: $rgba-primary-2
@@ -113,13 +122,24 @@ header
         border-color: $rgba-primary-4
     ul
         list-style-type: none
-        text-align: center
+        text-align: left
         padding: 0
         .date
             font-size: .8em
         .title
             font-size: .8em
             margin-bottom: 10px
+    @media all and (orientation: portrait)
+        ul
+            list-style-type: none
+            text-align: center
+            padding: 0
+            .date
+                font-size: .8em
+            .title
+                font-size: .8em
+                margin-bottom: 10px
+    
 #dummy-separator
     height: 50px
     background-size: 200px

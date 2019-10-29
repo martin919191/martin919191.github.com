@@ -131,7 +131,7 @@ header p {
 
 #studies ul {
   list-style-type: none;
-  text-align: center;
+  text-align: left;
   padding: 0;
 }
 
@@ -142,6 +142,21 @@ header p {
 #studies ul .title {
   font-size: .8em;
   margin-bottom: 10px;
+}
+
+@media all and (orientation: portrait) {
+  #studies ul {
+    list-style-type: none;
+    text-align: center;
+    padding: 0;
+  }
+  #studies ul .date {
+    font-size: .8em;
+  }
+  #studies ul .title {
+    font-size: .8em;
+    margin-bottom: 10px;
+  }
 }
 
 #experience {
@@ -162,7 +177,7 @@ header p {
 
 #experience ul {
   list-style-type: none;
-  text-align: center;
+  text-align: left;
   padding: 0;
 }
 
@@ -173,6 +188,21 @@ header p {
 #experience ul .title {
   font-size: .8em;
   margin-bottom: 10px;
+}
+
+@media all and (orientation: portrait) {
+  #experience ul {
+    list-style-type: none;
+    text-align: center;
+    padding: 0;
+  }
+  #experience ul .date {
+    font-size: .8em;
+  }
+  #experience ul .title {
+    font-size: .8em;
+    margin-bottom: 10px;
+  }
 }
 
 #dummy-separator {
