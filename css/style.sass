@@ -1,8 +1,8 @@
-$rgba-primary-0: rgba( 13, 51, 81,1);	// Main Primary color */
-$rgba-primary-1: rgba(  9, 83,140,1);
-$rgba-primary-2: rgba( 17, 70,111,1);
-$rgba-primary-3: rgba( 14, 39, 58,1);
-$rgba-primary-4: rgb(11, 28, 40);
+$rgba-primary-0: rgba( 13, 51, 81,1)	// Main Primary color */
+$rgba-primary-1: rgba(  9, 83,140,1)
+$rgba-primary-2: rgba( 17, 70,111,1)
+$rgba-primary-3: rgba( 14, 39, 58,1)
+$rgba-primary-4: rgb(11, 28, 40)
 
 *
     font-family: 'Montserrat', sans-serif
@@ -55,6 +55,7 @@ header
 #quote
     z-index: -1
     background-image: url('../images/code-seamless.jpg')
+    background-size: 200px
     box-shadow: 0 0 10px white inline
     .container
         padding: 20px
@@ -66,8 +67,8 @@ header
             padding: 25px
             @media all and (orientation: portrait)
                 padding: 10px
-            
-            box-shadow: 0 0 10px black
+
+                box-shadow: 0 0 10px black
             *
                 padding: 0
                 margin: 0
@@ -80,3 +81,52 @@ header
                 font-weight: bolder
                 text-shadow: 0 0 1px black
                 text-align: right
+#studies
+    padding-top: 15px
+    background-color: $rgba-primary-3
+    color: white
+    h1
+        font-size: 1.3em
+        text-align: center
+        text-shadow: 0 0 2px black
+    hr
+        border-color: $rgba-primary-0
+    ul
+        list-style-type: none
+        text-align: center
+        padding: 0
+        .date
+            font-size: .8em
+        .title
+            font-size: .8em
+            margin-bottom: 10px
+
+#experience
+    padding-top: 15px
+    background-color: $rgba-primary-2
+    color: white
+    h1
+        font-size: 1.3em
+        text-align: center
+        text-shadow: 0 0 2px black
+    hr
+        border-color: $rgba-primary-4
+    ul
+        list-style-type: none
+        text-align: center
+        padding: 0
+        .date
+            font-size: .8em
+        .title
+            font-size: .8em
+            margin-bottom: 10px
+#dummy-separator
+    height: 50px
+    background-size: 200px
+    background-image: url('../images/code-seamless.jpg')
+footer
+    background-color: $rgba-primary-4
+    color: white
+    font-size: .8em
+    padding: 5px
+    text-align: center

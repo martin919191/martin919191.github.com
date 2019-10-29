@@ -12,6 +12,7 @@ window.onscroll = function (event) {
     }
     //background-position-y: -10px
     $('#quote')[0].style.backgroundPositionY = Math.round(window.scrollY / 10) + 'px';
+    $('#dummy-separator')[0].style.backgroundPositionY = Math.round(window.scrollY / 10) + 'px';
     //console.log(Math.round(window.scrollY / 10));
 };
 
