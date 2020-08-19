@@ -15,34 +15,38 @@ html, body
     width: 80%
     height: 80%
     background-color: black
-    border-radius: 7px
-    box-shadow: 0 0 2px
+    border-radius: 4px
+    box-shadow: 0 0 5px rgb(100,100,100)
     overflow: hidden
     #terminal-header
         height: 22px
         background-color: rgb(229,229,229)
+        //background-image: linear-gradient(red, yellow)
+
         color: rgb(78,78,78)
-        text-shadow: 0 0 1px 
         font-family: sans-serif
         font-size: .8em
         line-height: 1.7em
         text-align: center
-        border-radius: 6px 6px 0 0
+        border-radius: 4px 4px 0 0
         .window-button
             width: 12px
             height: 12px
             background-color: rgb(255, 98, 90)
+            border: 1px solid rgb(244,19,19)
             position: absolute
             top: 5px
-            left: 5px
+            left: 7px
             border-radius: 6px
-            box-shadow: 0 0 2px black inset
+            //box-shadow: 0 0 2px black inset
         .window-button:nth-child(2)
-            left: 24px
+            left: 27px
             background-color: rgb(255, 189, 46)
+            border: 1px solid rgb(235,162,19)
         .window-button:nth-child(3)
             background-color: rgb(39,201,63)
-            left: 43px
+            border: 1px solid rgb(19,182,47)
+            left: 47px
     #terminal-text
         font-family: Inconsolata, 'Times New Roman', Times, serif
         color: rgb(0, 255, 0)
@@ -54,3 +58,4 @@ html, body
         overflow: hidden
         #command-text
             top: 0
+            height: 100%
