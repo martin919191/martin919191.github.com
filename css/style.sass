@@ -1,0 +1,56 @@
+@font-face
+    font-family: Inconsolata;
+    src: url("../fonts/Inconsolata-VariableFont_wdth,wght.ttf");
+*
+    margin: 0
+    padding: 0
+    box-sizing: border-box
+    position: relative
+html, body
+    height: 100%
+    width: 100%
+#terminal-window
+    margin: auto
+    top: 10%
+    width: 80%
+    height: 80%
+    background-color: black
+    border-radius: 7px
+    box-shadow: 0 0 2px
+    overflow: hidden
+    #terminal-header
+        height: 22px
+        background-color: rgb(229,229,229)
+        color: rgb(78,78,78)
+        text-shadow: 0 0 1px 
+        font-family: sans-serif
+        font-size: .8em
+        line-height: 1.7em
+        text-align: center
+        border-radius: 6px 6px 0 0
+        .window-button
+            width: 12px
+            height: 12px
+            background-color: rgb(255, 98, 90)
+            position: absolute
+            top: 5px
+            left: 5px
+            border-radius: 6px
+            box-shadow: 0 0 2px black inset
+        .window-button:nth-child(2)
+            left: 24px
+            background-color: rgb(255, 189, 46)
+        .window-button:nth-child(3)
+            background-color: rgb(39,201,63)
+            left: 43px
+    #terminal-text
+        font-family: Inconsolata, 'Times New Roman', Times, serif
+        color: rgb(0, 255, 0)
+        outline: 0
+        height: calc( 100% - 24px )
+        overflow: hidden
+        padding: 5px
+        white-space: pre
+        overflow: hidden
+        #command-text
+            top: 0

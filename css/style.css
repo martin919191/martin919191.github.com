@@ -1,0 +1,79 @@
+@font-face {
+  font-family: Inconsolata;
+  src: url("../fonts/Inconsolata-VariableFont_wdth,wght.ttf");
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  position: relative;
+}
+
+html, body {
+  height: 100%;
+  width: 100%;
+}
+
+#terminal-window {
+  margin: auto;
+  top: 10%;
+  width: 80%;
+  height: 80%;
+  background-color: black;
+  border-radius: 7px;
+  -webkit-box-shadow: 0 0 2px;
+          box-shadow: 0 0 2px;
+  overflow: hidden;
+}
+
+#terminal-window #terminal-header {
+  height: 22px;
+  background-color: #e5e5e5;
+  color: #4e4e4e;
+  text-shadow: 0 0 1px;
+  font-family: sans-serif;
+  font-size: .8em;
+  line-height: 1.7em;
+  text-align: center;
+  border-radius: 6px 6px 0 0;
+}
+
+#terminal-window #terminal-header .window-button {
+  width: 12px;
+  height: 12px;
+  background-color: #ff625a;
+  position: absolute;
+  top: 5px;
+  left: 5px;
+  border-radius: 6px;
+  -webkit-box-shadow: 0 0 2px black inset;
+          box-shadow: 0 0 2px black inset;
+}
+
+#terminal-window #terminal-header .window-button:nth-child(2) {
+  left: 24px;
+  background-color: #ffbd2e;
+}
+
+#terminal-window #terminal-header .window-button:nth-child(3) {
+  background-color: #27c93f;
+  left: 43px;
+}
+
+#terminal-window #terminal-text {
+  font-family: Inconsolata, 'Times New Roman', Times, serif;
+  color: lime;
+  outline: 0;
+  height: calc( 100% - 24px);
+  overflow: hidden;
+  padding: 5px;
+  white-space: pre;
+  overflow: hidden;
+}
+
+#terminal-window #terminal-text #command-text {
+  top: 0;
+}
+/*# sourceMappingURL=style.css.map */
