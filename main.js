@@ -1,6 +1,6 @@
 commands = {
     "whoami" : "My name is Martín Isusi Seff. I'm a software developer with 7+ years of experience in different platforms and technologies. \n\nI currently work at Accenture as a Application Development Specialist in Google Cloud platform.",
-    "help" : "Welcome to my interactive CV!\nThe following commands have been implemented to give you the information you want.\n\nwhoami - Well, this is preety self-explanatory... It will give you my information.\nhelp   - Prints the available commands and explains how to use the tool.\n"
+    "help" : "The following commands have been implemented to give you the information you want.\n\nwhoami - Well, this is preety self-explanatory... It will give you my information.\nhelp   - Prints the available commands and explains how to use the tool.\n"
 }
 
 var showCaret = false

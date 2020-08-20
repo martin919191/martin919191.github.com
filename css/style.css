@@ -33,7 +33,9 @@ html, body {
   background-color: #27c93f;
   border: 3px solid #13b62f;
   color: #0aad26;
-  color: black;
+  background-color: #ff625a;
+  border: 1px solid #f41313;
+  color: #f41313;
   cursor: pointer;
   outline: none;
   -webkit-transition: -webkit-box-shadow 0.3s;
