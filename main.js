@@ -88,7 +88,7 @@ window.mobileCheck = function() {
   };
 
 var mobile = window.mobileCheck()
-e = mobile? 'keyup' : 'keydown'
+e = mobile ? 'keyup' : 'keydown'
 console.log(e)
 
 $('#dummy-text-area').on(e, function(event) {
