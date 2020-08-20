@@ -88,10 +88,10 @@ window.mobileCheck = function() {
   };
 
 var mobile = window.mobileCheck()
-event = mobile? 'keyup' : 'keydown'
-console.log(event)
+e = mobile? 'keyup' : 'keydown'
+console.log(e)
 
-$('#dummy-text-area').on(event, function(event) {
+$('#dummy-text-area').on(e, function(event) {
     alert(event.keyCode);
     if(event.keyCode==32 || (event.keyCode>=65 && event.keyCode<=90)){
         var currentText = $('#command-text').text().replace("█","")//.trim()
