@@ -75,7 +75,7 @@ function runCommand(command){
 
 /***********************************************************************************************/
 
-$('#terminal-text').on('keydown', function(event) {
+$('#terminal-text').on('click', function(event) {
     $('#dummy-text-area').focus()
     $('#dummy-text-area').trigger('click')
 })
