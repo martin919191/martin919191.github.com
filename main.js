@@ -87,9 +87,11 @@ window.mobileCheck = function() {
     return check;
   };
 
-$('#dummy-text-area').text((window.mobileCheck()))
+var mobile = window.mobileCheck()
+event = mobile? 'keyup' : 'keydown'
+console.log(event)
 
-$('#dummy-text-area').on('keydown', function(event) {
+$('#dummy-text-area').on(event, function(event) {
     //console.log(event.keyCode);
     if(event.keyCode==32 || (event.keyCode>=65 && event.keyCode<=90)){
         var currentText = $('#command-text').text().replace("█","")//.trim()
