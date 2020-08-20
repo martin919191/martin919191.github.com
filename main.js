@@ -23,7 +23,63 @@ var showCaret = false
 
 //setTimeout(blinkCursor, 500)
 
+/*$('#terminal-text').on('keydown', function(event) {
+    //console.log(event.keyCode);
+    if(event.keyCode==32 || (event.keyCode>=65 && event.keyCode<=90)){
+        var currentText = $('#command-text').text().replace("█","")//.trim()
+        if(currentText.endsWith("guest-user@mycomputer ~ %")){
+            $('#command-text').text(currentText + " " + String.fromCharCode(event.keyCode).toLowerCase() + "█")
+        }else{
+            $('#command-text').text(currentText + String.fromCharCode(event.keyCode).toLowerCase() + "█")
+        }
+    }
+    if(event.keyCode==8){
+        var currentText = $('#command-text').text().replace("█","").trim()
+        //console.log(currentText)
+        if(!currentText.endsWith("guest-user@mycomputer ~ %"))
+            $('#command-text').text(currentText.substring(0, currentText.length - 1) + "█")
+    }
+    if(event.keyCode==13){
+        var currentText = $('#command-text').text().replace("█","").trim().split("\n")
+        lastCommand = currentText[currentText.length - 1].replace("guest-user@mycomputer ~ %", "").trim()
+        if (lastCommand=='clear'){
+            $('#command-text').text("guest-user@mycomputer ~ % █")
+            return
+        }else if(lastCommand == ""){
+            var newText = $('#command-text').text().replace("█","").trim() + "\nguest-user@mycomputer ~ % █"
+            $('#command-text').text(newText)
+        }else{
+            var newText = $('#command-text').text().replace("█","").trim() + "\n" + runCommand(lastCommand) + "guest-user@mycomputer ~ % █"
+            //var newText = $('#command-text').text().replace("█","").trim() + "\n" + "guest-user@mycomputer ~ % █"
+            $('#command-text').text(newText)
+        }
+        
+        console.log("Command to execute= " + lastCommand)
+
+        $("#terminal-text").mCustomScrollbar("scrollTo","bottom",{scrollInertia:0});
+    }
+    
+ });*/
+
+$("#terminal-text").mCustomScrollbar({
+    theme:"minimal"
+});
+
+function runCommand(command){
+    commandOutput = commands[command]
+    if (commandOutput == undefined)
+        return 'zsh: command not found: [COMMAND]\n'.replace('[COMMAND]', command)
+    else
+        return commandOutput + "\n"
+}
+
+/***********************************************************************************************/
+
 $('#terminal-text').on('keydown', function(event) {
+    $('#dummy-text-area').focus()
+})
+
+$('#dummy-text-area').on('keydown', function(event) {
     //console.log(event.keyCode);
     if(event.keyCode==32 || (event.keyCode>=65 && event.keyCode<=90)){
         var currentText = $('#command-text').text().replace("█","")//.trim()
@@ -72,4 +128,5 @@ function runCommand(command){
     else
         return commandOutput + "\n"
 }
+
 
