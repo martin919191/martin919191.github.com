@@ -74,10 +74,11 @@ function runCommand(command){
 }
 
 /***********************************************************************************************/
-
+n = 0
 $('#terminal-text').on('click', function(event) {
     $('#dummy-text-area').focus()
     $('#dummy-text-area').trigger('click')
+    $('#dummy-text-area').text("Clicked" + (n++))
 })
 
 $('#dummy-text-area').on('keydown', function(event) {
