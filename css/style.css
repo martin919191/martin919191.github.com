@@ -16,6 +16,36 @@ html, body {
   width: 100%;
 }
 
+#help-button {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  position: absolute;
+  right: 10px;
+  bottom: 10px;
+  border: none;
+  -webkit-box-shadow: 0 0 5px black;
+          box-shadow: 0 0 5px black;
+  font-size: 1.8em;
+  line-height: 0.7em;
+  text-align: center;
+  text-shadow: 0 0 2px;
+  background-color: #27c93f;
+  border: 3px solid #13b62f;
+  color: #0aad26;
+  cursor: pointer;
+  outline: none;
+  -webkit-transition: -webkit-box-shadow 0.3s;
+  transition: -webkit-box-shadow 0.3s;
+  transition: box-shadow 0.3s;
+  transition: box-shadow 0.3s, -webkit-box-shadow 0.3s;
+}
+
+#help-button:hover {
+  -webkit-box-shadow: none;
+          box-shadow: none;
+}
+
 #terminal-window {
   margin: auto;
   top: 10%;
@@ -69,8 +99,9 @@ html, body {
   height: calc( 100% - 24px);
   overflow: hidden;
   padding: 5px;
-  white-space: pre;
+  white-space: pre-wrap;
   overflow: hidden;
+  word-wrap: normal;
 }
 
 #terminal-window #terminal-text #command-text {

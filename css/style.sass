@@ -9,6 +9,29 @@
 html, body
     height: 100%
     width: 100%
+#help-button
+    width: 40px
+    height: 40px
+    border-radius: 50%
+    position: absolute
+    right: 10px
+    bottom: 10px
+    //border: 2px solid rgb(229,229,229)
+    border: none
+    box-shadow: 0 0 5px black
+    font-size: 1.8em
+    line-height: 0.7em
+    text-align: center
+    text-shadow: 0 0 2px
+    background-color: rgb(39,201,63)
+    border: 3px solid rgb(19,182,47)
+    color:  rgb(10,173,38)
+    cursor: pointer
+    outline: none
+    transition: box-shadow 0.3s
+#help-button:hover
+    //text-decoration: underline
+    box-shadow: none
 #terminal-window
     margin: auto
     top: 10%
@@ -54,8 +77,10 @@ html, body
         height: calc( 100% - 24px )
         overflow: hidden
         padding: 5px
-        white-space: pre
+        white-space: pre-wrap
         overflow: hidden
+        word-wrap: normal
         #command-text
             top: 0
             height: 100%
+            
