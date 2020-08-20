@@ -33,6 +33,7 @@ html, body {
   background-color: #27c93f;
   border: 3px solid #13b62f;
   color: #0aad26;
+  color: black;
   cursor: pointer;
   outline: none;
   -webkit-transition: -webkit-box-shadow 0.3s;
@@ -90,6 +91,14 @@ html, body {
   background-color: #27c93f;
   border: 1px solid #13b62f;
   left: 47px;
+}
+
+#terminal-window #terminal-header:before {
+  background-image: url("../favicon.png");
+  content: "___";
+  color: transparent;
+  display: inline-block;
+  background-size: cover;
 }
 
 #terminal-window #terminal-text {
