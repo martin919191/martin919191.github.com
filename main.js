@@ -5,7 +5,7 @@ commands = {
 
 var showCaret = false
 /*var blinkCursor = function(){
-    var currentText = $('#command-text').text().replace("█","").trim()
+    var currentText = $('#command-text').text().replace("█","")
     //currentText = currentText.substring(0, currentText.length - 1);
     //console.log(currentText)
     if (showCaret){
