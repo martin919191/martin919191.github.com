@@ -92,7 +92,7 @@ event = mobile? 'keyup' : 'keydown'
 console.log(event)
 
 $('#dummy-text-area').on(event, function(event) {
-    //console.log(event.keyCode);
+    alert(event.keyCode);
     if(event.keyCode==32 || (event.keyCode>=65 && event.keyCode<=90)){
         var currentText = $('#command-text').text().replace("█","")//.trim()
         if(currentText.endsWith("guest-user@mycomputer ~ %")){
