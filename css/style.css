@@ -16,6 +16,11 @@ html, body {
   width: 100%;
 }
 
+body {
+  background-image: url("../images/bg_1.webp");
+  background-size: contain;
+}
+
 .noselect {
   -webkit-touch-callout: none;
   -webkit-user-select: none;
@@ -72,8 +77,8 @@ html, body {
   height: 80%;
   background-color: black;
   border-radius: 4px;
-  -webkit-box-shadow: 0 0 5px #646464;
-          box-shadow: 0 0 5px #646464;
+  -webkit-box-shadow: 0 0 5px black;
+          box-shadow: 0 0 5px black;
   overflow: hidden;
 }
 
