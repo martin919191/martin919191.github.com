@@ -16,6 +16,14 @@ html, body {
   width: 100%;
 }
 
+.noselect {
+  -webkit-touch-callout: none;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
 #help-button {
   width: 40px;
   height: 40px;

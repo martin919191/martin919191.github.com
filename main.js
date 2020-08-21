@@ -112,6 +112,7 @@ $('#dummy-text-area').on('keyup', function(event) {
         lastCommand = currentText[currentText.length - 1].replace("guest-user@mycomputer ~ %", "").trim()
         if (lastCommand=='clear'){
             $('#command-text').text("guest-user@mycomputer ~ % █")
+            $('#dummy-text-area').val("")
             return
         }else if(lastCommand == ""){
             var newText = $('#command-text').text().replace("█","").trim() + "\nguest-user@mycomputer ~ % █"
