@@ -1,3 +1,5 @@
+default_terminal_text = "guest-user@mycomputer ~ % "
+
 commands = {
     "whoami" : "My name is Martín Isusi Seff. I'm a software developer with 7+ years of experience in different platforms and technologies. \n\nI currently work at Accenture as a Application Development Specialist in Google Cloud platform.",
     "help" : "The following commands have been implemented to give you the information you want.\n\nwhoami - Well, this is preety self-explanatory... It will give you my information.\nhelp   - Prints the available commands and explains how to use the tool.\n"
@@ -91,22 +93,20 @@ var mobile = window.mobileCheck()
 event = mobile? 'keyup' : 'keydown'
 console.log(event)
 
+previousCommand = ""
+$('#dummy-text-area').on('change textInput input', function(event) {
+    var currentText = $('#command-text').text().replace("█","").split("\n")
+    var newText = ""
+    for (x=0; x<currentText.length-1; x++){newText += currentText[x] + "\n"}
+    var currentCommand = $('#dummy-text-area').val()
+    newText += default_terminal_text + currentCommand + "█"
+    if (currentCommand != previousCommand)
+        $('#command-text').text(newText)
+    previousCommand = currentCommand
+    //alert(currentText + currentCommand + "█")
+});
+
 $('#dummy-text-area').on('keyup', function(event) {
-    alert(event.keyCode);
-    if(event.keyCode==32 || (event.keyCode>=65 && event.keyCode<=90)){
-        var currentText = $('#command-text').text().replace("█","")//.trim()
-        if(currentText.endsWith("guest-user@mycomputer ~ %")){
-            $('#command-text').text(currentText + " " + String.fromCharCode(event.keyCode).toLowerCase() + "█")
-        }else{
-            $('#command-text').text(currentText + String.fromCharCode(event.keyCode).toLowerCase() + "█")
-        }
-    }
-    if(event.keyCode==8){
-        var currentText = $('#command-text').text().replace("█","").trim()
-        //console.log(currentText)
-        if(!currentText.endsWith("guest-user@mycomputer ~ %"))
-            $('#command-text').text(currentText.substring(0, currentText.length - 1) + "█")
-    }
     if(event.keyCode==13){
         var currentText = $('#command-text').text().replace("█","").trim().split("\n")
         lastCommand = currentText[currentText.length - 1].replace("guest-user@mycomputer ~ %", "").trim()
@@ -123,7 +123,7 @@ $('#dummy-text-area').on('keyup', function(event) {
         }
         
         console.log("Command to execute= " + lastCommand)
-
+        $('#dummy-text-area').val("")
         $("#terminal-text").mCustomScrollbar("scrollTo","bottom",{scrollInertia:0});
     }
     
