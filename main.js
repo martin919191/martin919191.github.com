@@ -98,7 +98,7 @@ $('#dummy-text-area').on('change textInput input', function(event) {
     var currentText = $('#command-text').text().replace("█","").split("\n")
     var newText = ""
     for (x=0; x<currentText.length-1; x++){newText += currentText[x] + "\n"}
-    var currentCommand = $('#dummy-text-area').val()
+    var currentCommand = $('#dummy-text-area').val().toLowerCase()
     newText += default_terminal_text + currentCommand + "█"
     if (currentCommand != previousCommand)
         $('#command-text').text(newText)
